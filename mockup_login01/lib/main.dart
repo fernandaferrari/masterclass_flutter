@@ -82,12 +82,15 @@ class HomePage extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(vertical: 12),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        FaIcon(FontAwesomeIcons.google, color: Colors.red),
-                        SizedBox(
+                      children: [
+                        Image.asset(
+                          "images/google.png",
+                          scale: 10,
+                        ),
+                        const SizedBox(
                           width: 10,
                         ),
-                        Text("Sign Up with Google",
+                        const Text("Sign Up with Google",
                             style: TextStyle(
                                 color: Colors.black,
                                 fontWeight: FontWeight.bold)),
@@ -100,7 +103,7 @@ class HomePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text("Already have an account?",
-                    style: TextStyle(color: Colors.white, fontSize: 18)),
+                    style: TextStyle(color: Colors.white, fontSize: 17)),
                 TextButton(
                     onPressed: () {},
                     child: const Text("Sign In",
@@ -108,7 +111,7 @@ class HomePage extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
                             decoration: TextDecoration.underline,
-                            fontSize: 18)))
+                            fontSize: 17)))
               ],
             )
           ],
